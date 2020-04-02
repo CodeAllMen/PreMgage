@@ -1,20 +1,20 @@
 package sp
 
 import (
+	"errors"
 	"fmt"
 	"github.com/MobileCPX/PreMgage/util"
 	"github.com/astaxie/beego/httplib"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
-	"github.com/pkg/errors"
 	"strconv"
 	"strings"
 	"time"
 )
 
-//Postback 网盟信息
+// Postback 网盟信息
 type Postback struct {
-	ID           int     `orm:"pk;auto;column(id)" json:"-"`                            //自增ID
+	ID           int     `orm:"pk;auto;column(id)" json:"-"`                            // 自增ID
 	CreateTime   string  `orm:"column(create_time)" json:"-"`                           // 添加时间
 	UpdateTime   string  `orm:"column(update_time)" json:"-"`                           // 更新时间
 	DayCap       int     `orm:"column(day_cap)" json:"day_cap"`                         // 更新时间
@@ -22,17 +22,17 @@ type Postback struct {
 	PostbackURL  string  `orm:"column(postback_url);size(300)" json:"postback_url"`     // postback URL
 	PostbackRate int     `orm:"column(postback_rate);default(50)" json:"postback_rate"` // 回传概率
 	Payout       float32 `orm:"column(Payout)" json:"payout"`                           // 转化单价
-	PromoterName string  `orm:"column(promoter_name)" json:"promoter_name"`             //外放人
-	PromoterID   int     `orm:"column(promoter_id)" json:"promoter_id"`                 //外放人 ID
+	PromoterName string  `orm:"column(promoter_name)" json:"promoter_name"`             // 外放人
+	PromoterID   int     `orm:"column(promoter_id)" json:"promoter_id"`                 // 外放人 ID
 	CampID       int     `orm:"column(camp_id)" json:"camp_id"`                         // CampID
 	OfferID      int     `orm:"column(offer_id)" json:"offer_id"`
 }
 
 // StartPostback 订阅成功后向网盟回传订阅数据
-//请求 todaySubNum 该网盟今日订阅数，  todayPostbackNum 该网盟今日回传数   根据这两个算概率，是否回传
-//返回数据 isSuccess 是否回传   code 网络请求的返回code   payout  请求成功后的花费
+// 请求 todaySubNum 该网盟今日订阅数，  todayPostbackNum 该网盟今日回传数   根据这两个算概率，是否回传
+// 返回数据 isSuccess 是否回传   code 网络请求的返回code   payout  请求成功后的花费
 func StartPostback(mo *Mo, todaySubNum, todayPostbackNum int64) (isSuccess bool, code string, payout float32) {
-	//postback, err := getPostbackInfoByAffName(mo.AffName, mo.ServiceName)
+	// postback, err := getPostbackInfoByAffName(mo.AffName, mo.ServiceName)
 
 	postback, err := getPostbackInfoByOfferID(mo.OfferID, mo.AffName, mo.ServiceID)
 	if err != nil {
@@ -178,7 +178,7 @@ func (postback *Postback) CheckOfferIDIsExist(offerID int) error {
 	return err
 }
 
-//Update  更新Postback
+// Update  更新Postback
 func (postBack *Postback) Update() error {
 	o := orm.NewOrm()
 	postBack.UpdateTime, _ = util.GetFormatTime()
@@ -189,7 +189,7 @@ func (postBack *Postback) Update() error {
 	return err
 }
 
-//Insert  插入Postback
+// Insert  插入Postback
 func (postBack *Postback) Insert() error {
 	o := orm.NewOrm()
 	postBack.CreateTime, _ = util.GetFormatTime()

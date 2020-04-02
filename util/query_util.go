@@ -5,7 +5,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/MobileCPX/PreNTH/conf"
+	"github.com/MobileCPX/PreNTH_AT/conf"
 )
 
 // GetFormatHoursTime 获取当前格式化时间  格式为 2006-01-02 15
@@ -76,8 +76,8 @@ func GetServiceType(serviceCode string) string {
 		serviceType = conf.NLRedlightvideosName
 	case "NL030076":
 		serviceType = conf.NLHotvideoName
-	case "NL030077":
-		serviceType = conf.NLGogamehubName
+	// case "NL030077":
+	// 	serviceType = conf.NLGogamehubName
 	case "NL030080":
 		serviceType = conf.NLIfunnyName
 	case "NL030081":

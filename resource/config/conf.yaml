@@ -11,10 +11,10 @@ service:
     aoc_url: "http://migpay.com/managed_subscriptions/new"
     contract_length: "infinite"
     item_description: "Gold Finger,a unique entertainment center."
-    content_url: "http://muk.g0finger.com?s="
-    register_url: "http://muk.g0finger.com/adduser?username={user_name}"
-    unsub_success_url: "http://muk.g0finger.com/unsub/success"
-    unsub_failed_url: "http://muk.g0finger.com/unsub/failed"
+    content_url: "http://uk.goldfingervr.com?s="
+    register_url: "http://uk.goldfingervr.com/adduser?username={user_name}"
+    unsub_success_url: "http://uk.goldfingervr.com/unsub/success"
+    unsub_failed_url: "http://uk.goldfingervr.com/unsub/failed"
     limit_sub_num: 50
     camp_id: 3
   889-Vodafone:
@@ -29,10 +29,10 @@ service:
     aoc_url: "http://migpay.com/managed_subscriptions/new"
     contract_length: "infinite"
     item_description: "Gold Finger,a unique entertainment center."
-    content_url: "http://muk.g0finger.com?s="
-    register_url: "http://muk.g0finger.com/adduser?username={user_name}"
-    unsub_success_url: "http://muk.g0finger.com/unsub/success"
-    unsub_failed_url: "http://muk.g0finger.com/unsub/failed"
+    content_url: "http://uk.goldfingervr.com?s="
+    register_url: "http://uk.goldfingervr.com/adduser?username={user_name}"
+    unsub_success_url: "http://uk.goldfingervr.com/unsub/success"
+    unsub_failed_url: "http://uk.goldfingervr.com/unsub/failed"
     limit_sub_num: 50
     camp_id: 3
   889-Three:
@@ -47,10 +47,10 @@ service:
     aoc_url: "http://migpay.com/managed_subscriptions/new"
     contract_length: "infinite"
     item_description: "Gold Finger,a unique entertainment center."
-    content_url: "http://muk.g0finger.com?s="
-    register_url: "http://muk.g0finger.com/adduser?username={user_name}"
-    unsub_success_url: "http://muk.g0finger.com/unsub/success"
-    unsub_failed_url: "http://muk.g0finger.com/unsub/failed"
+    content_url: "http://uk.goldfingervr.com?s="
+    register_url: "http://uk.goldfingervr.com/adduser?username={user_name}"
+    unsub_success_url: "http://uk.goldfingervr.com/unsub/success"
+    unsub_failed_url: "http://uk.goldfingervr.com/unsub/failed"
     limit_sub_num: 50
     camp_id: 4
   892:
@@ -65,9 +65,9 @@ service:
     aoc_url: "http://migpay.com/managed_subscriptions/new"
     contract_length: "infinite"
     item_description: "Join Fit8Tube now,make your body strongest."
-    content_url: "http://muk.fit8tube.com?s="
-    register_url: "http://muk.fit8tube.com/adduser?sign=mgage_uk&username={user_name}"
-    unsub_success_url: "http://muk.fit8tube.com/unsub/success"
+    content_url: "http://uk.fitnessnice.com?s="
+    register_url: "http://uk.fitnessnice.com/adduser?sign=mgage_uk&username={user_name}"
+    unsub_success_url: "http://uk.fitnessnice.com/unsub/success"
     api_key: "7540fbdfc4990e47dbf2b82c9ca2f92ce68bdd34"
     limit_sub_num: 50
     camp_id: 11
@@ -83,9 +83,9 @@ service:
     aoc_url: "http://migpay.com/managed_subscriptions/new"
     contract_length: "infinite"
     item_description: "Join Fit8Tube now,make your body strongest."
-    content_url: "http://muk.fit8tube.com?s="
-    register_url: "http://muk.fit8tube.com/adduser?sign=mgage_uk&username={user_name}"
-    unsub_success_url: "http://muk.fit8tube.com/unsub/success"
+    content_url: "http://uk.fitnessnice.com?s="
+    register_url: "http://uk.fitnessnice.com/adduser?sign=mgage_uk&username={user_name}"
+    unsub_success_url: "http://uk.fitnessnice.com/unsub/success"
     api_key: "7540fbdfc4990e47dbf2b82c9ca2f92ce68bdd34"
     limit_sub_num: 50
     camp_id: 11
@@ -101,9 +101,9 @@ service:
     aoc_url: "http://migpay.com/managed_subscriptions/new"
     contract_length: "infinite"
     item_description: "Join Fit8Tube now,make your body strongest."
-    content_url: "http://muk.fit8tube.com?s="
-    register_url: "http://muk.fit8tube.com/adduser?sign=mgage_uk&username={user_name}"
-    unsub_success_url: "http://muk.fit8tube.com/unsub/success"
+    content_url: "http://uk.fitnessnice.com?s="
+    register_url: "http://uk.fitnessnice.com/adduser?sign=mgage_uk&username={user_name}"
+    unsub_success_url: "http://uk.fitnessnice.com/unsub/success"
     api_key: "7540fbdfc4990e47dbf2b82c9ca2f92ce68bdd34"
     limit_sub_num: 50
     camp_id: 12
@@ -192,7 +192,7 @@ service:
     contract_length: "infinite"
     item_description: "play Holyzgames now,"
     content_url: "http://muk.holyzgame.com?s="
-    register_url: "http://muk.fit8tube.com/adduser?sign=mgage_uk&username={user_name}"
+    register_url: "http://uk.fitnessnice.com/adduser?sign=mgage_uk&username={user_name}"
     unsub_success_url: "http://muk.holyzgame.com/unsub/success"
     api_key: "107934853a936cf3fdebd3d463682b7e"
     limit_sub_num: 50
@@ -210,7 +210,7 @@ service:
     contract_length: "infinite"
     item_description: "play Holyzgames now,"
     content_url: "http://muk.holyzgame.com?s="
-    register_url: "http://muk.fit8tube.com/adduser?sign=mgage_uk&username={user_name}"
+    register_url: "http://uk.fitnessnice.com/adduser?sign=mgage_uk&username={user_name}"
     unsub_success_url: "http://muk.holyzgame.com/unsub/success"
     api_key: "107934853a936cf3fdebd3d463682b7e"
     limit_sub_num: 50

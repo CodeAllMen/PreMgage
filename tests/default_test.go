@@ -1,12 +1,12 @@
 package test
 
 import (
+	_ "github.com/MobileCPX/PreMgage/routers"
 	"net/http"
 	"net/http/httptest"
-	"testing"
-	"runtime"
 	"path/filepath"
-	_ "github.com/MobileCPX/PreMgage/routers"
+	"runtime"
+	"testing"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"
@@ -37,3 +37,46 @@ func TestBeego(t *testing.T) {
 	})
 }
 
+
+//func TestUnsub(t *testing.T){
+//
+//	resp := new(unsubResp)
+//	msisdn := ""
+//
+//	mo := new(sp.Mo)
+//	err := mo.GetMoByMsisdnAndService(msisdn, serviceID)
+//
+//
+//	unsubURL := "https://api.migpay.com/subscriptions/" + mo.SubscriptionID + "/unsubscribe.json"
+//	fmt.Println(unsubURL)
+//	req := httplib.Post(unsubURL)
+//	req.Header("Host", "api.migpay.com")
+//	req.Header("MigPay-API-Key", "ec10abf99d5ef8e97c6731d74225c17ab0f94fd7")
+//	req.Header("Accept", "application/json")
+//	body, err := req.Bytes()
+//	if err != nil {
+//		c.Ctx.WriteString("Unsub Failed")
+//		c.StopRun()
+//	}
+//	err = json.Unmarshal(body, resp)
+//	if err != nil {
+//		c.Ctx.WriteString("Unsub Failed")
+//		c.StopRun()
+//	}
+//	logs.Info("SubIDUnsub", string(body))
+//	if resp.Response.MigSid != "" {
+//		mo := new(sp.Mo)
+//		err = mo.GetMoByUserID(resp.Response.MigSid)
+//		_, err = mo.UnsubUpdateMo()
+//		if err == nil {
+//			//c.Ctx.WriteString("Unsub SUCCESS")
+//			c.redirect(serviceConfig.UnsubSuccessURL)
+//		} else {
+//			//c.Ctx.WriteString("Unsub ERROR")
+//			c.redirect(serviceConfig.UnsubFailedURL)
+//		}
+//	} else {
+//		c.redirect(serviceConfig.UnsubFailedURL)
+//	}
+//
+//}
